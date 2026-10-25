@@ -2,7 +2,8 @@ import psycopg
 
 INSEPCT_COMMAND = """
 SELECT *
-FROM questions;
+FROM questions
+ORDER BY id;
 """
 
 with psycopg.connect(
