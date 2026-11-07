@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:17-bookworm
+    container_name: science-question-db
+    environment:
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "5433:5432"
+    volumes:
+      - science-question-data:/var/lib/postgresql/data
+
+volumes:
+  science-question-data:
+    external: true

@@ -3,7 +3,7 @@ import psycopg
 INSEPCT_COMMAND = """
 SELECT *
 FROM questions
-ORDER BY id;
+WHERE subject = 'Physics';
 """
 
 with psycopg.connect(
