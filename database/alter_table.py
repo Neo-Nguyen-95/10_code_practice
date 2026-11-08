@@ -2,7 +2,7 @@ import psycopg
 
 COMMAND = """
 ALTER TABLE questions
-ADD COLUMN subject_id INTEGER REFERENCES subjects(id)
+ADD COLUMN weight INTEGER;
 """
 
 with psycopg.connect(
