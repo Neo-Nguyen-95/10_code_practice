@@ -1,0 +1,19 @@
+{
+  "done": {},
+  "lessons": {
+    "p2-w2-sql-joins-groupby-windows": {
+      "quiz": {},
+      "sandbox": {
+        "x-free-practice": "SELECT q.id, q.question_text,\n       COUNT(a.id)                AS attempts,\n       ROUND(AVG(a.is_correct), 2) AS accuracy\nFROM questions AS q\nLEFT JOIN attempts AS a ON a.question_id = q.id\nGROUP BY q.id\nORDER BY accuracy;"
+      },
+      "sql": {}
+    }
+  },
+  "logs": {},
+  "reviews": {},
+  "sessions": [],
+  "settings": {
+    "weekly_target_hours": 9
+  },
+  "version": 2
+}

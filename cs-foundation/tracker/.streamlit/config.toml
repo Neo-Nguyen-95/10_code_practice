@@ -1,0 +1,39 @@
+# Theme for the learning tracker. Streamlit reads this file because it sits
+# next to app.py. Light and dark mode each get their own colors; switch in the
+# app menu (⋮ → Settings) or follow your system setting.
+
+[server]
+address = "localhost"   # only this computer can open the tracker (not others on your Wi-Fi)
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+baseRadius = "0.6rem"
+buttonRadius = "0.6rem"
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+showSidebarBorder = true
+
+[theme.light]
+primaryColor = "#2a78d6"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f6f9"
+textColor = "#1f2430"
+borderColor = "#e3e7ee"
+linkColor = "#1c5cab"
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"]
+
+[theme.light.sidebar]
+backgroundColor = "#f4f6f9"
+
+[theme.dark]
+primaryColor = "#3987e5"
+backgroundColor = "#14161a"
+secondaryBackgroundColor = "#1d2127"
+textColor = "#eceef2"
+borderColor = "#2b3038"
+linkColor = "#86b6ef"
+chartCategoricalColors = ["#3987e5", "#d95926", "#199e70", "#c98500"]
+
+[theme.dark.sidebar]
+backgroundColor = "#1a1d22"
